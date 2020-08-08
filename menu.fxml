@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar id="menu" fx:id="menuBar" prefHeight="30.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.toanhuuvuong.controller.common.MenuController">
+	<menus>
+		<Menu mnemonicParsing="false" text="Quản lý">
+			<items>
+				<Menu mnemonicParsing="false" text="Quản lý hội nghị">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#listConferenceMenuItemOnAction" text="Danh sách hội nghị" />
+					</items>
+				</Menu>
+				<Menu fx:id="roleMenu" mnemonicParsing="false" text="Quản lý vai trò">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#listRoleMenuItemOnAction" text="Danh sách vai trò" />
+					</items>
+				</Menu>
+				<Menu fx:id="accountMenu" mnemonicParsing="false" text="Quản lý tài khoản">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#listAccountMenuItemOnAction" text="Danh sách tài khoản" />
+					</items>
+				</Menu>
+				<Menu fx:id="placeMenu" mnemonicParsing="false" text="Quản lý địa điểm">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#listPlaceMenuItemOnAction" text="Danh sách địa điểm" />
+					</items>
+				</Menu>
+			</items>
+		</Menu>
+		<Menu fx:id="statisticsMenu" mnemonicParsing="false" text="Thống kê">
+			<items>
+            <Menu mnemonicParsing="false" text="Thống kê hội nghị">
+               <items>
+      				<MenuItem mnemonicParsing="false" onAction="#listConferenceStatisticsMenuItemOnAction" text="Danh sách hội nghị tham gia" />
+               </items>
+            </Menu>
+			</items>
+		</Menu>
+	</menus>
+</MenuBar>
